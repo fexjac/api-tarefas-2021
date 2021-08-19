@@ -1,0 +1,28 @@
+{
+  "name": "api-tarefas-2021",
+  "version": "1.0.0",
+  "description": "API REST para a aplicaçao de Gerenciar Tarefas",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fexjac/api-tarefas-2021.git"
+  },
+  "keywords": [
+    "api",
+    "tarefas"
+  ],
+  "author": "Jaison Costa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fexjac/api-tarefas-2021/issues"
+  },
+  "homepage": "https://github.com/fexjac/api-tarefas-2021#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+    
+  }
+}
