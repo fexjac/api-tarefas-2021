@@ -23,6 +23,5 @@
   "homepage": "https://github.com/fexjac/api-tarefas-2021#readme",
   "dependencies": {
     "express": "^4.17.1"
-    
   }
 }
