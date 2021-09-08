@@ -1,13 +1,20 @@
+const Tarefa = require('../models/Tarefa')
+
 // Funções que irão acessar o banco de dados(CRUD)
 
 exports.listarTodas = (req, res) => {
-    const dados = [
-        {id: 1, descricao: 'Pagar conta de luz'},
-        {id: 2, descricao: 'Pagar conta de água'},
-        {id: 3, descricao: 'Luta de galo'}
-    ]
-    res.status(200)
-    res.send(dados)
+
+    try{
+        // Concatenar atividade por causa da execução assincrona do js
+        Tarefa.find().then((dados) => {
+            res.status(200)
+            res.send(dados)
+        })
+
+    }catch (erro) {
+        res.status(500)
+        res.send({ mensagem: errp.message})
+    }
 }
 
 exports.listarPorId = (req, res) => {
