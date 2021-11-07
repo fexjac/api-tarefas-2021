@@ -19,5 +19,5 @@ app.use('/api/v1', router)
 // arrow function =>
 // função dentro da outra = callback
 app.listen(process.env.PORT, () => {
-    console.log(`Servidor está rodando na porta ${process.env.PORT}`)
+    console.log(`API rodando na porta ${process.env.PORT}`)
 })
